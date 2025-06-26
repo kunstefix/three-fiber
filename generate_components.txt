@@ -1,0 +1,8 @@
+npx gltfjsx jungfrau_3d/etherlaken-Main_Building_F0_roof.gltf --transform -t -o "src/interlaken/Main_Building_F0_roof.tsx";
+npx gltfjsx jungfrau_3d/etherlaken-Main_Building_F0.gltf --transform -t -o "src/interlaken/Main_Building_F0.tsx";
+npx gltfjsx jungfrau_3d/etherlaken-Main_Building_F1_Roof.gltf --transform -t -o "src/interlaken/Main_Building_F1_Roof.tsx";
+npx gltfjsx jungfrau_3d/etherlaken-Main_Building_F1.gltf --transform -t -o "src/interlaken/Main_Building_F1.tsx";
+npx gltfjsx jungfrau_3d/etherlaken-Main_Building_Tower_Ball.gltf --transform -t -o "src/interlaken/Main_Building_Tower_Ball.tsx";
+npx gltfjsx jungfrau_3d/etherlaken-Main_Building_Tower.gltf --transform -t -o "src/interlaken/Main_Building_Tower.tsx";
+npx gltfjsx jungfrau_3d/etherlaken-Outer_Ring_Inner_Passages.gltf --transform -t -o "src/interlaken/Outer_Ring_Inner_Passages.tsx"
+npx gltfjsx jungfrau_3d/etherlaken-Outer_Ring.gltf --transform -t -o "src/interlaken/Outer_Ring.tsx";
