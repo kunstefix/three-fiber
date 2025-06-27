@@ -30,13 +30,19 @@ export const Scene3D = ({
 
   const handleObjectClick = (object: Object) => {
     console.log("clicked", object.id);
-    onObjectClick(object);
     if (
       object.id === "Main_Building_F1_Roof" ||
       object.id === "Main_Building_F1"
     ) {
       setHiddenObjects(["Main_Building_F1_Roof"]);
-    } else if (object.id === "Main_Building_F0") {
+      const selectedObject = OBJECTS.find((o) => o.id === "Main_Building_F1");
+      onObjectClick(selectedObject!);
+    } else if (
+      object.id === "Main_Building_F0" ||
+      object.id === "Main_Building_F0_roof"
+    ) {
+      const selectedObject = OBJECTS.find((o) => o.id === "Main_Building_F0");
+      onObjectClick(selectedObject!);
       setHiddenObjects([
         "Main_Building_F0_roof",
         "Main_Building_F1",
@@ -46,6 +52,7 @@ export const Scene3D = ({
       ]);
     } else {
       setHiddenObjects([]);
+      onObjectClick(object);
     }
   };
 

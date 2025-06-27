@@ -1,11 +1,11 @@
 import "./App.css";
 import { useState, useRef } from "react";
 import * as THREE from "three";
-import { 
-  CameraPositionDisplay, 
-  Scene3D, 
-  NoObjectSelected, 
-  ObjectInfo 
+import {
+  CameraPositionDisplay,
+  Scene3D,
+  NoObjectSelected,
+  ObjectInfo,
 } from "./components";
 import type { Object } from "./types";
 
@@ -39,12 +39,12 @@ function App() {
       </div>
 
       {/* Info */}
-      <div className="h-[50%] absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black from-60% to-transparent text-white">
-        {!selectedObject ? (
-          <NoObjectSelected />
-        ) : (
-          <ObjectInfo selectedObject={selectedObject} />
-        )}
+      <div className="h-[50%] absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black from-60% to-transparent text-white flex flex-col items-center justify-center my-auto">
+          {!selectedObject ? (
+            <NoObjectSelected />
+          ) : (
+            <ObjectInfo selectedObject={selectedObject} />
+          )}
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ interface ObjectInfoProps {
 }
 
 export const ObjectInfo = ({ selectedObject }: ObjectInfoProps) => (
-  <div className="flex flex-col items-center justify-center flex-1 mx-30">
+  <div className="flex flex-col items-center justify-center flex-1 mx-30 h-full">
     <ObjectTitle name={selectedObject.name} />
     <AnimatePresence mode="wait">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 h-full">

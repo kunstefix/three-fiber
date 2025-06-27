@@ -42,7 +42,7 @@ export const OBJECTS: Object[] = [
     },
     images: ["https://picsum.photos/id/1/200/100"],
     position: [0, 0, 0],
-    focusPosition: [0.75, 1.13, 0.19],
+    focusPosition: [ -0.18, 0.94, -0.99 ],
   },
   {
     id: "Main_Building_F0_roof",
@@ -58,7 +58,7 @@ export const OBJECTS: Object[] = [
     },
     images: ["https://picsum.photos/id/5/200/100"],
     position: [0, 0, 0],
-    focusPosition: [2, 1.5, 0.5],
+    focusPosition: [ -0.18, 0.94, -0.99 ],
   },
   {
     id: "Main_Building_F1",
