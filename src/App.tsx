@@ -39,7 +39,7 @@ function App() {
       </div>
 
       {/* Info */}
-      <div className="h-[50%] absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black from-60% to-transparent text-white flex flex-col items-center justify-center my-auto">
+      <div className="h-[50%] absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black from-60% to-transparent text-white flex flex-col items-center justify-center my-auto pointer-events-none">
           {!selectedObject ? (
             <NoObjectSelected />
           ) : (
