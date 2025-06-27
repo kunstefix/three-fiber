@@ -5,7 +5,7 @@ Files: etherlaken-Main_Building_F0_roof.gltf [2.09KB] > /Users/klemenkunstek/Des
 */
 
 import * as THREE from 'three'
-import React, { type JSX } from 'react'
+import { type JSX } from 'react'
 import { useGLTF,  } from '@react-three/drei'
 import type { GLTF } from 'three-stdlib'
 

@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import React, { useState, useMemo, useEffect, type JSX } from "react";
+import { useState, useMemo, useEffect, type JSX } from "react";
 import { useGLTF } from "@react-three/drei";
 import type { GLTF } from "three-stdlib";
 import type { ThreeEvent } from "@react-three/fiber";

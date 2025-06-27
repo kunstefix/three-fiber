@@ -5,7 +5,7 @@ Files: etherlaken-Main_Building_F0.gltf [9.64KB] > /Users/klemenkunstek/Desktop/
 */
 
 import * as THREE from 'three'
-import React, { type JSX, useState, useMemo } from 'react'
+import { type JSX, useState, useMemo } from 'react'
 import { useGLTF,  } from '@react-three/drei'
 import type { GLTF } from 'three-stdlib'
 

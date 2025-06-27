@@ -5,7 +5,7 @@ Files: jungfrau_3d/etherlaken-Main_Building_Tower.gltf [1.83KB] > /Users/klemenk
 */
 
 import * as THREE from 'three'
-import React, { type JSX } from 'react'
+import { type JSX } from 'react'
 import { useGLTF,  } from '@react-three/drei'
 import type { GLTF } from 'three-stdlib'
 

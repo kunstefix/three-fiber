@@ -1,4 +1,3 @@
-import React from 'react'
 import { GenericGLB } from '../components/GenericGLB'
 
 interface OuterRingInnerPassagesProps {
