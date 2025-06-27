@@ -2,7 +2,7 @@ import "./App.css";
 import { useState, useRef } from "react";
 import * as THREE from "three";
 import {
-  CameraPositionDisplay,
+  /* CameraPositionDisplay, */
   Scene3D,
   NoObjectSelected,
   ObjectInfo,
@@ -13,7 +13,7 @@ function App() {
   const [selectedObject, setSelectedObject] = useState<Object>();
   const cameraRef = useRef<THREE.PerspectiveCamera>(null);
   const targetPosition = useRef([1, 0.4, 0.2]);
-  const [cameraPosition, setCameraPosition] = useState([1, 0.4, 0.2]);
+  const [/* cameraPosition */, setCameraPosition] = useState([1, 0.4, 0.2]);
   const [isInterpolating, setIsInterpolating] = useState(false);
 
   const handleObjectClick = (object: Object) => {
@@ -26,7 +26,7 @@ function App() {
     <div className="w-full flex-1 h-full gap-4">
       {/* Canvas */}
       <div className="relative h-[70vh] bg-[#242424]">
-        <CameraPositionDisplay position={cameraPosition} />
+       {/*  <CameraPositionDisplay position={cameraPosition} /> */}
         <Scene3D
           cameraRef={cameraRef}
           targetPosition={targetPosition}
