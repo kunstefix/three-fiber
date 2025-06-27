@@ -8,6 +8,7 @@ import {
   ObjectInfo,
 } from "./components";
 import type { Object } from "./types";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [selectedObject, setSelectedObject] = useState<Object>();
@@ -23,6 +24,8 @@ function App() {
   };
 
   return (
+    <>
+    <Analytics />
     <div className="w-full flex-1 h-full gap-4">
       {/* Canvas */}
       <div className="relative h-[70vh] bg-[#242424]">
@@ -47,6 +50,7 @@ function App() {
           )}
       </div>
     </div>
+    </>
   );
 }
 
