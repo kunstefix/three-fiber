@@ -18,7 +18,7 @@ export const ObjectInfo = ({ selectedObject }: ObjectInfoProps) => (
   <div className="flex flex-col items-center justify-center flex-1 mx-30">
     <ObjectTitle name={selectedObject.name} />
     <AnimatePresence mode="wait">
-      <div className="grid grid-cols-3 gap-8 h-full">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 h-full">
         {selectedObject.images && (
           <ImagesColumn
             images={selectedObject.images}

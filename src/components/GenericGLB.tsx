@@ -13,6 +13,7 @@ interface GenericGLBProps {
   rotation?: [number, number, number];
   scale?: [number, number, number];
   color?: string;
+  hidden?: boolean;
 }
 
 // Generic GLTF result type that can handle any model structure
@@ -29,6 +30,7 @@ export function GenericGLB({
   hoverEmissiveIntensity = 0.2,
   enableHover = true,
   color,
+  hidden, 
   ...props
 }: GenericGLBProps & JSX.IntrinsicElements["group"]) {
   const { nodes, materials } = useGLTF(glbPath) as unknown as GenericGLTFResult;
@@ -61,8 +63,17 @@ export function GenericGLB({
   const mesh = nodes[firstMeshKey];
   const material = materials[firstMaterialKey];
 
+  if (hidden) {
+    return null;
+  }
+
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} onClick={(e) => {
+      e.stopPropagation();
+      if (props.onClick) {
+        props.onClick(e);
+      }
+    }}>
       <mesh
         geometry={mesh.geometry}
         material={isHovered && enableHover ? hoverMaterial : color ? new THREE.MeshStandardMaterial({ color }) : material}
